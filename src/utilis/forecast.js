@@ -9,7 +9,7 @@ const forecast = (longtitude, latitude, callback) => {
         } else {
             const data = body;
             if(data){
-                callback(undefined, `${data.current.weather_descriptions[0]}. It is currently ${data.current.temperature} degress out. It feels like ${data.current.feelslike} degress out.`);
+                callback(undefined, `${data.current.weather_descriptions[0]}. It is currently ${data.current.temperature} degress out. It feels like ${data.current.feelslike} degress out. And humidity is ${data.current.humidity}%`);
                 // callback(undefined, {
                 //     feelslike : data.current.feelslike,
                 //     weather_descriptions: data.current.weather_descriptions[0],
